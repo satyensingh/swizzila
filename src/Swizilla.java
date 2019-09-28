@@ -1,8 +1,9 @@
 import java.time.LocalDate;
 
+import com.d2d.bds.eliminate.switchcase.KeyCode;
 import com.d2d.bds.eliminate.switchcase.with.array.DOW;
 import com.d2d.bds.eliminate.switchcase.with.array.DOWArray;
-import com.d2d.bds.eliminate.switchcase.with.hashtable.KeyCode;
+import com.d2d.bds.eliminate.switchcase.with.file.KeyCodeLoadFromFile;
 import com.d2d.bds.eliminate.switchcase.with.hashtable.KeyCodeHashtable;
 
 public class Swizilla {
@@ -14,8 +15,10 @@ public class Swizilla {
 		System.out.println(DOWArray.dayOfWeek(1));
 		
 		// value replace switch (dynamic over time)
-		System.out.println(KeyCode.getKeyMap(38));
+		System.out.println(KeyCode.getKeyMap(38));		
 		System.out.println(KeyCodeHashtable.getKeyMap(38));
+		System.out.println(KeyCodeLoadFromFile.getKeyMap(38));
+		
 		
 		// value action switch
 		System.out.println(ChangeCase.convert(ChangeCase.Case.Pascal, new String[] { "Numeric", "Value" }));

@@ -8,7 +8,7 @@ public class KeyCodeLoadFromFile {
 
 	public static String getKeyMap(int keycode) {
 		String code = "";
-		bundle = ResourceBundle.getBundle("com.d2d.bds.eliminate.switchcase.with.hashtable.data");
+		bundle = ResourceBundle.getBundle("com.d2d.bds.eliminate.switchcase.with.file.data");
 		code = bundle.getString("" + keycode);
 		return code;
 	}
