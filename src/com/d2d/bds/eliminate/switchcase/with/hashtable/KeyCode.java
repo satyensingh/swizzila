@@ -1,6 +1,7 @@
+package com.d2d.bds.eliminate.switchcase.with.hashtable;
 
 public class KeyCode {
-	public static String GetKeyMap(int keycode) {
+	public static String getKeyMap(int keycode) {
 		String code = "";
 		switch (keycode) {
 		case 37:

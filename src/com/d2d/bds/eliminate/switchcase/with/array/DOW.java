@@ -1,9 +1,10 @@
+package com.d2d.bds.eliminate.switchcase.with.array;
 
 public class DOW {
-	public static String DayOfWeek(int day)
+	public static String dayOfWeek(int day)
     {
         String dow = "Error";
-
+        
         switch(day)
         {
             case 1: 

@@ -1,6 +1,5 @@
 import java.time.LocalDate;
 import java.time.Period;
-import java.util.Date;
 
 class Customer {
 
@@ -40,7 +39,6 @@ class Customer {
 	private void setBirthday(LocalDate birthday) {
 		this.birthday = birthday;
 	}
-
 
 	public Customer(String customerName, LocalDate customerSince, LocalDate dateOfLastPurchase, LocalDate birthday) {
 		this.customerName = customerName;
