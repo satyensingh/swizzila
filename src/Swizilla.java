@@ -1,7 +1,8 @@
 import java.time.LocalDate;
 
+import com.d2d.bds.eliminate.switchcase.ChangeCase;
+import com.d2d.bds.eliminate.switchcase.DOW;
 import com.d2d.bds.eliminate.switchcase.KeyCode;
-import com.d2d.bds.eliminate.switchcase.with.array.DOW;
 import com.d2d.bds.eliminate.switchcase.with.array.DOWArray;
 import com.d2d.bds.eliminate.switchcase.with.file.KeyCodeLoadFromFile;
 import com.d2d.bds.eliminate.switchcase.with.hashtable.KeyCodeHashtable;
@@ -21,7 +22,7 @@ public class Swizilla {
 		
 		
 		// value action switch
-		System.out.println(ChangeCase.convert(ChangeCase.Case.Pascal, new String[] { "Numeric", "Value" }));
+		System.out.println(ChangeCase.convert(ChangeCase.Case.Camel, new String[] { "Numeric", "Value" }));
 		
 		// value action if-else ladder
 		System.out.println(Math.round(Billing.calculateTariff(274) *100.00)/100.00);

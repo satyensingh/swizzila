@@ -1,4 +1,4 @@
-package com.d2d.bds.eliminate.switchcase.with.array;
+package com.d2d.bds.eliminate.switchcase;
 
 public class DOW {
 	public static String dayOfWeek(int day)

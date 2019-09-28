@@ -1,8 +1,9 @@
+package com.d2d.bds.eliminate.switchcase;
 
 public class ChangeCase {
 
 	public enum Case {
-		Lower, Upper, Pascal
+		Lower, Upper, Pascal, Camel
 	};
 
 	public static String convert(Case cas, String[] words) {
@@ -20,6 +21,14 @@ public class ChangeCase {
 
 		case Pascal: // PascalCase
 			for (int i = 0; i < words.length; i++) {
+				outstring += words[i].substring(0, 1).toUpperCase();
+				outstring += words[i].substring(1).toLowerCase();
+			}
+			break;
+
+		case Camel: // PascalCase
+			outstring += words[0].toLowerCase();
+			for (int i = 1; i < words.length; i++) {
 				outstring += words[i].substring(0, 1).toUpperCase();
 				outstring += words[i].substring(1).toLowerCase();
 			}
