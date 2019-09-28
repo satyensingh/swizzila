@@ -1,4 +1,4 @@
-package com.d2d.bds.eliminate.switchcase.with.hashtable;
+package com.d2d.bds.eliminate.switchcase;
 
 public class KeyCode {
 	public static String getKeyMap(int keycode) {

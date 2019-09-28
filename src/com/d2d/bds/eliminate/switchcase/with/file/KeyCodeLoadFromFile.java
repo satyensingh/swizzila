@@ -1,4 +1,4 @@
-package com.d2d.bds.eliminate.switchcase.with.hashtable;
+package com.d2d.bds.eliminate.switchcase.with.file;
 
 import java.util.ResourceBundle;
 
