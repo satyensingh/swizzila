@@ -1,5 +1,7 @@
 import java.time.LocalDate;
 
+import com.d2d.bds.eliminate.ifelseifelse.ladder.Billing;
+import com.d2d.bds.eliminate.ifelseifelse.ladder.RuleEngine;
 import com.d2d.bds.eliminate.switchcase.ChangeCase;
 import com.d2d.bds.eliminate.switchcase.DOW;
 import com.d2d.bds.eliminate.switchcase.KeyCode;
@@ -7,6 +9,7 @@ import com.d2d.bds.eliminate.switchcase.with.array.DOWArray;
 import com.d2d.bds.eliminate.switchcase.with.file.KeyCodeLoadFromFile;
 import com.d2d.bds.eliminate.switchcase.with.function.ChangeCaseFunction;
 import com.d2d.bds.eliminate.switchcase.with.hashtable.KeyCodeHashtable;
+import com.d2d.bds.eliminate.switchcase.with.interfac.CamelCase;
 
 public class Swizilla {
 
@@ -25,9 +28,18 @@ public class Swizilla {
 		// value action switch
 		System.out.println(ChangeCase.convert(ChangeCase.Case.Camel, new String[] { "Numeric", "Value" }));
 		System.out.println(ChangeCaseFunction.convert(ChangeCaseFunction.Case.Kebab, new String[] { "Numeric", "Value" }));
+		System.out.println(new CamelCase().convert(new String[] { "Numeric", "Value" }));
 		
 		// value action if-else ladder
+		System.out.println(Math.round(Billing.calculateTariff(74) *100.00)/100.00);
 		System.out.println(Math.round(Billing.calculateTariff(274) *100.00)/100.00);
+		System.out.println(Math.round(Billing.calculateTariff(474) *100.00)/100.00);
+		System.out.println(Math.round(Billing.calculateTariff(574) *100.00)/100.00);
+		
+		System.out.println(Math.round(RuleEngine.calculateTariff(74) *100.00)/100.00);
+		System.out.println(Math.round(RuleEngine.calculateTariff(274) *100.00)/100.00);
+		System.out.println(Math.round(RuleEngine.calculateTariff(474) *100.00)/100.00);
+		System.out.println(Math.round(RuleEngine.calculateTariff(574) *100.00)/100.00);
 	
 		// varied condition if-else ladder
         Customer anders = new Customer("James Gosling", LocalDate.of(2017,  07,  07), LocalDate.of(2017, 10, 5), LocalDate.of(1955, 5, 19));

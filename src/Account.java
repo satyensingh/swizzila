@@ -1,4 +1,5 @@
-class Account {
+public class Account {
+	
 	public enum Type {
 		SavingsAccount, CurrentAccount
 	}
